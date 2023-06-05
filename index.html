@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>CRUD System</title>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        class="one"
+        fill ="#FF8E28"
+        fill-opacity="0.5"
+        d="M0,256L40,245.3C80,235,160,213,240,176C320,139,400,85,480,90.7C560,96,640,160,720,170.7C800,181,880,139,960,133.3C1040,128,1120,160,1200,154.7C1280,149,1360,107,1400,85.3L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        class="two"
+        fill ="#2e77ae"
+        fill-opacity="0.4"
+        d="M0,224L40,202.7C80,181,160,139,240,154.7C320,171,400,245,480,272C560,299,640,277,720,261.3C800,245,880,235,960,208C1040,181,1120,139,1200,101.3C1280,64,1360,32,1400,16L1440,0L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+      ></path>
+    </svg>
+    <div class="Curd">
+      <div class="top">
+        <h1>CRUD</h1>
+        <div>
+          <button class="sun" data-value="yes">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <button class="light" data-value="no">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="left">
+          <div class="div">
+            <div>
+              <label for="name">Courses <span>*</span></label>
+              <input
+                type="text"
+                placeholder="Name Course"
+                id="name"
+                class="course"
+              />
+              <p>Use Capital Latter</p>
+            </div>
+
+            <div>
+              <label for="price">Price <span>*</span></label>
+              <input
+                type="number"
+                placeholder="The Price"
+                id="price"
+                class="price"
+              />
+            </div>
+
+            <div>
+              <label for="quantity">Quantity <span>*</span></label>
+              <input
+                type="number"
+                placeholder="The Quantity"
+                id="quantity"
+                class="quantity"
+              />
+            </div>
+
+            <div>
+              <label for="Description">Description <span>*</span></label>
+              <input
+                type="text"
+                placeholder="The Description ..."
+                id="Description"
+                class="description"
+              />
+            </div>
+
+            <div>
+              <span class="add">Add</span>
+              <span class="deleteAll">Delete All</span>
+              <span class="clear">Clear</span>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="divTwo">
+            <div>
+              <input
+                type="search"
+                name=""
+                id=""
+                placeholder="Search ..."
+                class="search"
+              />
+              <span>
+                <i class="fa-solid fa-x"></i>
+              </span>
+            </div>
+          </div>
+
+          <hr />
+
+          <table>
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Courses</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Description</th>
+                <th>Update</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3">Num of Course</td>
+                <td class="sum">0</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
